@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Redressed&family=Shadows+Into+Light&family=Shizuru&family=Source+Sans+Pro:ital@1&display=swap');
 
 
-  * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,6 +27,7 @@
 .navbar a:hover {
   color: #3498db;
   text-decoration: underline;
+  box-shadow: 0 0 5px #1572A1;
 }
 
 .menu_active {
@@ -134,22 +135,65 @@
   left: -35px;
 }
 
-.card{
-  background: linear-gradient(rgba(29, 236, 197, 0.5),rgba(91, 14, 214, 0.5) 100%);
-}
-
-.nav-link:hover{
+.nav-link:hover {
   border: 0;
   border-radius: 1rem;
-  box-shadow: 0 0 10px #C2DED1 , 0 0 10px #C2DED1 ;
+  box-shadow: 0 0 10px #C2DED1, 0 0 10px #C2DED1;
   /* background-color: #484848; */
   color: white;
   font-weight: 1000;
 }
+
 #exampleFormControlInput1 {
   background-color: antiquewhite;
 }
-#exampleFormControlTextarea1{
-  background-color: antiquewhite;
 
+#exampleFormControlTextarea1 {
+  background-color: antiquewhite;
+}
+
+#card-title {
+  font-family: cursive;
+  font-style: oblique;
+  font-weight: 800;
+}
+
+#optional {
+  color: gray;
+}
+
+.card {
+  background: linear-gradient(rgba(29, 236, 197, 0.5), rgba(91, 14, 214, 0.5) 100%);
+  transition: all 0.5s ease-out;
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+}
+
+.card:hover {
+  transform: translateY(-20px) scale(1.006) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0 24px 46px var(--box-shadow-color);
+    background-color: tan;
+}
+
+#explore_buttton {
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 2px;
+  text-decoration: none;
+
+}
+#explore_buttton:hover{
+  background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+  box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+  text-transform: uppercase;
+}
+
+sup{
+  color: red;
+  font-size: 2px;
 }

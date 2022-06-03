@@ -4,6 +4,7 @@ import WhyChoose from './Sub Component/WhyChoose'
 import webData from './WebData'
 
 function Service() {
+   
     return (
         <>
             <div className='my-5'>
@@ -12,11 +13,14 @@ function Service() {
             <div className="container-fluid mb-5">
                 <div className="row">
                     <div className='col-10 mx-auto'>
-                        <div className='row'>
+                        <div className='row'
+                        
+                        
+                        >
                         {
                             webData.map((value,index)=>{
                                 return(
-                                    <Card key={index} imgsrc={value.imgsrc} title={value.title}/>
+                                    <Card style={{}} key={index} imgsrc={value.imgsrc} title={value.title} explore={value.explore} />
                                 )
                             })
                         }

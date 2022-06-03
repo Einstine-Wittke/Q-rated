@@ -5,15 +5,19 @@ import digimrkt from "../images/digimrkt.jpg"
 const webData = [
     {
         imgsrc: webdev,
-        title: "Web Development"
+        title: "Web Development",
+        explore: "/service/web-dev",
     },
     {
         imgsrc: appdev,
-        title: "App Development"
+        title: "App Development",
+        explore: "/service/app-dev",
+
     },
     {
         imgsrc: digimrkt,
-        title: "Digital Marketing"
+        title: "Digital Marketing",
+        explore: "/service/digi-mrkt",
     },
 ]
 
